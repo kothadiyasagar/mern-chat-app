@@ -26,6 +26,7 @@ const MyChats = ({ fetchAgain }) => {
       };
 
       const { data } = await axios.get("/api/chat", config);
+      console.log(data,chats)
       setChats(data);
     } catch (error) {
       toast({
